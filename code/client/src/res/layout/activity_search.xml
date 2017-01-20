@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="15dp"
+            android:orientation="horizontal"
+            android:background="@color/searchGrey">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/search_grey"/>
+
+            <EditText
+                android:id="@+id/searchEditText"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textCursorDrawable="@null"
+                android:hint="@string/search"
+                android:textSize="15sp"
+                android:textColorHint="@color/grey"
+                android:background="@null"
+                android:layout_marginStart="8dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="@string/cancel"
+            android:textSize="17sp"
+            android:textColor="@color/colorAccent"
+            android:background="@color/transplant"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="@color/grey"
+        />
+
+    <ListView
+        android:id="@+id/searchListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@drawable/list_item_divider"
+        android:dividerHeight="1px"
+        />
+
+</LinearLayout>

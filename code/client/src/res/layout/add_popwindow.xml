@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/newMailLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="@color/realBlack"
+        android:alpha="0.6"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/edit"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/write_mail"
+            android:textSize="17sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="@color/realBlack"
+        android:alpha="0.7"
+        />
+
+    <LinearLayout
+        android:id="@+id/newContactLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="@color/realBlack"
+        android:alpha="0.6"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/add_contact"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/add_contact"
+            android:textSize="17sp"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>
